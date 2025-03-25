@@ -1,0 +1,21 @@
+voting app
+-----------
+
+what->  a functionality where user can give the vote to the given set of candidates 
+
+
+modules?
+endpoints?
+
+voying functionality
+
+1. user signin / singup
+2. see the candidates list 
+3. one vote only
+4. show live voting result 
+5. require Gov id proof namr adhar card no.
+6. one admin who can maintain candidates and cant able to vote
+7. user can change their password
+8. user can only login with adhar card no. and password
+
+-----------------------------------------------------------
