@@ -1,11 +1,13 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+// const bcrypt = require('bcrypt');
 
+// Define the Person schema
 const candidateSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
     },
-    paty: {
+    party: {
         type: String,
         required: true
     },
@@ -13,7 +15,7 @@ const candidateSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    vote: [
+    votes: [
         {
             user: {
                 type: mongoose.Schema.Types.ObjectId,
@@ -30,7 +32,7 @@ const candidateSchema = new mongoose.Schema({
         type: Number,
         default: 0
     }
-})
+});
 
 const Candidate = mongoose.model('Candidate', candidateSchema);
 module.exports = Candidate;
